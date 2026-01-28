@@ -10,12 +10,22 @@
 body{
     margin:0;
     height:100vh;
-    background:linear-gradient(135deg,#667eea,#764ba2);
     display:flex;
     justify-content:center;
     align-items:center;
+
+    /* background image added */
+    background:
+        linear-gradient(135deg, rgba(102,126,234,0.6), rgba(118,75,162,0.6)),
+        url(<%= request.getContextPath() %>/images/productdeliverybg.png);
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
     font-family:Poppins,sans-serif;
 }
+
 .card{
     background:white;
     width:420px;

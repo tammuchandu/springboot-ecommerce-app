@@ -9,16 +9,19 @@
 
     <style>
         body {
-            margin: 0;
-            height: 100vh;
-            background: 
-                linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-                url('${pageContext.request.contextPath}/images/bg3.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            font-family: 'Poppins', sans-serif;
-        }
+    margin: 0;
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url(<%= request.getContextPath() %>/images/shoppingbg.png);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: 'Poppins', sans-serif;
+}
+
 
         /* ===== Top Center Brand ===== */
         .brand {
